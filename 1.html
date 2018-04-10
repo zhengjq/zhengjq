@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-image: url('background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0;
+		margin: 0;
+		background-color: #99C2CC;
+		cursor: url('huiji1.png'),default;
+	}
+		.container{
+			width: 80%;
+			height: 400px;
+			text-align: center;
+			margin: auto;
+		}
+		.block1{
+			width: 560px;
+			height: 70px;
+			float: left;
+			border: 1px solid black;
+			transform: translateX(50%);
+			top: 278px;
+			left: -208px;
+			transform: rotate(270deg);
+			position: absolute;
+			text-align: center;
+
+		}
+		.block2{
+			width: 1050px;
+			height: 560px;
+			border: 1px solid black;
+			position: absolute;
+			left: 140px;
+			top: 32px;
+			text-align: center;
+			margin: auto;
+			overflow: auto;
+		}
+		.block2::-webkit-scrollbar{
+			width: 0;
+			height: 0;
+			display: none;
+		}
+		.zheng{
+			float: left;
+			width: 50%;
+			text-align: left;
+		}
+		.zheng h3{
+			padding-left: 20px;
+		}
+		.about{
+			float: right;
+			width: 50%;
+			text-align: right;
+		}
+		.about a{
+			padding-right: 20px;
+			padding-top: 80px;
+			text-decoration: none;
+		}
+		.about div{
+			line-height: 70px;
+		}
+		.about span{
+			color: black;
+			font-weight: 500;
+		}
+		.about a:hover,.about a:active{
+			text-decoration: line-through;
+		}
+		.about a:visited{
+			text-decoration: line-through;
+			color: #82C1C1;
+		}
+		.self{
+			width: 90%;
+			border-top: none;
+			position: relative;
+			top: 0;
+			height: 560px;
+			margin: auto;
+		}
+		.who{
+			width: 50%;
+			float: left;
+			color: #51758C;
+			padding-left: 20px;
+			text-align: left;
+		}
+		.who table{
+			border-spacing: 10px;
+			margin-top: 30px;
+			background-color: rgba(255, 255, 255, 0.2);
+			color: #888888;
+		}
+		.photo1{
+			width: 35%;
+			float: right;
+			position: relative;
+			top: 0;
+			text-align: center;
+		}
+		.photo1 img{
+			width: 200px;
+			transform: translateY(50%);
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="block1">
+		<div class="zheng">
+			<h3>ZHENG.+7</h3>
+		</div>
+		<div class="about">
+			<div>
+			<a href="#about"><span>about</span></a>
+			<a href="#photo"><span>photo</span></a>
+			<a href="#end"><span>end</span></a>
+		</div>
+		</div>
+	</div>
+	<div class="block2">
+		<a name="about"></a>
+		<div class="self">
+			<div class="who">
+				<h1>郑嘉琪</h1>
+				<table>
+					<tr>
+						<td style="width: 70px;text-align: right;">学院：</td>
+						<td style="width: 250px">自动化学院</td>
+					</tr>
+					<tr>
+						<td style="text-align: right;">专业：</td>
+						<td>物联网工程</td>
+					</tr>
+					<tr>
+						<td valign="top" align="right">爱好：</td>
+						<td>喜欢发呆 喜欢看剧 喜欢好看的东西<br> 喜欢看乱七八糟的书</td>
+					</tr>
+					<tr>
+						<td valign="top" align="right">学习进程：</td>
+						<td>xixi~粗略的看完了html和css 是条小咸鱼呀 </td>
+					</tr>
+				</table>
+			</div>
+			<div class="photo1">
+				<img src="photo2.jpg">
+			</div>
+		</div>
+		<a name="photo"></a>
+		<div class="self">xixi</div>
+		<a name="end"></a>
+		<div class="self">
+			<div style="position: relative;top:50%;transform: translateY(-50%);font-family: 宋体">
+			<h1>End</h1>
+			<p style="width: 500px;text-indent:2em;text-align: left;position: relative;left: 50%;transform: translateX(-50%);line-height: 30px">很喜欢蒲荔子的一段话：一种关系之中，最让人感到安慰满足的，不是知道了自己的黑暗，而是在黑暗中有人应声，有人说一起走吧。</p>
+			<p style="font-size: 20px">那么接下来 一起走吧~</p>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
