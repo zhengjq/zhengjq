@@ -102,15 +102,51 @@
 			color: #888888;
 		}
 		.photo1{
-			width: 35%;
+			width: 40%;
 			float: right;
 			position: relative;
-			top: 0;
-			text-align: center;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: right;
 		}
 		.photo1 img{
-			width: 200px;
-			transform: translateY(50%);
+			width: 250px;
+		}
+		.masonry{
+			display: flex;
+			flex-direction: row;
+		}
+		.column{
+			display: flex;
+			flex-direction: column;
+			width: calc(100%/3);
+		}
+		.item_content1{
+			height: 200px;
+			background-color: rgba(255,250,205, 0.4);
+		}
+		.item_content2{
+			height: 300px;
+			background-color: rgba(	240,248,255, 0.4);
+		}
+		.item_content3{
+			height: 250px;
+			background-color: rgba(255,228,225, 0.4);
+		}
+		.item div{
+			margin: 10px;
+		}
+		.item img{
+			padding-top: 20px;
+			padding-bottom: 10px;
+			margin: auto;
+		}
+		.item span{
+			background-color: rgba(220, 220, 220, 0.6);
+			font-family: "宋体";
+			letter-spacing: 2px;
+			font-size: 1.1em;
+			font-weight: bolder;
 		}
 	</style>
 </head>
@@ -131,12 +167,12 @@
 	<div class="block2">
 		<a name="about"></a>
 		<div class="self">
-			<div class="who">
+			<div class="who" style="padding-top: 100px;">
 				<h1>郑嘉琪</h1>
 				<table>
 					<tr>
 						<td style="width: 70px;text-align: right;">学院：</td>
-						<td style="width: 250px">自动化学院</td>
+						<td style="width: 460px">自动化学院</td>
 					</tr>
 					<tr>
 						<td style="text-align: right;">专业：</td>
@@ -147,7 +183,7 @@
 						<td>喜欢发呆 喜欢看剧 喜欢好看的东西<br> 喜欢看乱七八糟的书</td>
 					</tr>
 					<tr>
-						<td valign="top" align="right">学习进程：</td>
+						<td valign="top" align="right" width="120px">学习进程：</td>
 						<td>xixi~粗略的看完了html和css 是条小咸鱼呀 </td>
 					</tr>
 				</table>
@@ -157,7 +193,46 @@
 			</div>
 		</div>
 		<a name="photo"></a>
-		<div class="self">xixi</div>
+		<div class="self">
+	<div class="masonry">
+	<div class="column">
+	<div class="item">
+	<div class="item_content1">
+		<span style="position: relative;top:50%;transform:translateY(50%);">努力成为一个有趣的人啊</span>
+	</div>
+	<div class="item_content2">
+		<img src="flower.jpg" style="width:70%;display: block;">
+		<span>南亭码头的木棉花</span>
+	</div>
+</div>
+</div>
+    <div class="column">
+	<div class="item">
+	<div class="item_content2">
+		<img src="yeah.jpg" style="width: 80%;display: block;">
+		<span>xixi~真的很会浪耶</span>
+	</div>
+	<div class="item_content3">
+		<img src="movie.png" style="width: 100%;display: block;">
+		<span>最近看的一部日本爱情片嘻嘻~<br>
+		心动不已，乐此不疲</span>
+	</div>
+</div>
+</div>
+    <div class="column">
+	<div class="item">
+	<div class="item_content3">
+		<span style="position: relative;top: 50%;transform: translateY(50%);">好好学习<br>天天向上~
+		</span>
+	</div>
+	<div class="item_content2">
+		<img src="xixi.jpg" style="width: 80%;display: block;">
+		<span>开心~</span>
+	</div>
+</div>
+</div>
+</div>
+</div>
 		<a name="end"></a>
 		<div class="self">
 			<div style="position: relative;top:50%;transform: translateY(-50%);font-family: 宋体">
